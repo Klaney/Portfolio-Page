@@ -5,27 +5,190 @@
 	<title>Keaton Laney</title>
 
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="keaton.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
+	<!-- Start of FullpageJS -->
 	<div id="fullpage">
-    <div class="section">
-    	<h1>Keaton Laney</h1>
-			<h3>Full-Stack Web Developer</h3>
+		<!-- Introduction Section -->
+    <div class="section fade-in" id="introduction">
+    	<h1 class="intro animated slideInDown">Keaton Laney</h1>
+    	<img class="animated slideInDown" src="assets/Headshot2.jpeg" id="headshot">
+			<h2 class="intro animated slideInDown" id="title">Full-Stack Web Developer</h2>
     </div>
-    <div class="section">Some section</div>
-    <div class="section">
-    	<div class="slide" data-anchor="slide1"> Sliding all up in this bizatch </div>
-	    <div class="slide" data-anchor="slide2"> Slide 2 </div>
-	    <div class="slide" data-anchor="slide3"> Slide 3 </div>
-	    <div class="slide" data-anchor="slide4"> Slide 4 </div>
+    <!-- About Me Section -->
+    <div class="section fade-in" id="aboutme">
+    	<h1>Pertinent details considered for employment</h1>
+    	<!-- Story -->
+    	<div id="story">
+    		<h3>About Me</h3>
+    		<p>
+    			Born in San Francisco and raised in Sacramento, I've always had a head for tech
+    		</p>
+    		<p>
+    			At the Age of 12 I self taught myself HTML, and throughout my teenage years, I added CSS, Visual Basic, and C++ to my repertoire.
+    		</p>
+    		<p>
+    			After school, I decided to become a self employed freelance IT/Computer builder till I transitioned into Sales, and eventually to the field of Real Estate.
+    		</p>
+    		<p>
+    			Although I had a passion for Real Estate, I felt my talents were wasted on sales. I decided to come back to coding, my original passion, and carve out a career that I can fully immerse myself into, and enjoy for the rest of my life.
+    		</p>
+    	</div>
+    	<!-- Skills -->
+    	<div id="skills">
+    		<h3>Skillset</h3>
+    		<div id="tech">
+    			<h4>Web Development</h4>
+    			<ul class="skill">
+    				<legend><strong>Languages</strong></legend>
+  					<ul class="skill">
+	    				<li>HTML5</li>
+	    				<li>CSS3</li>
+	    				<li>Javascript</li>
+	    				<li>Ruby</li>
+  					</ul>
+    				<legend><strong>Technologies/Frameworks</strong></legend>
+  					<ul class="skill">
+	    				<li>AngularJS</li>
+	    				<li>NodeJS</li>
+	    				<li>ExpressJS</li>
+	    				<li>Ruby on Rails</li>
+	    				<li>Socket.io</li>
+	    			</ul>
+    				<legend><strong>Databases</strong></legend>
+  					<ul class="skill">
+	    				<li>MongoDB</li>
+	    				<li>PostgreSQL</li>
+	    			</ul>
+    			</ul>
+    		</div>
+    		<div id="realestate">
+    			<h4>More</h4>
+	    		<ul class="skill">
+	    			<legend><strong>Other</strong></legend>
+	    			<ul class="skill">
+	    				<li>Bootstrap</li>
+	    				<li>Materialize</li>
+	    				<li>JSON</li>
+	    				<li>AJAX</li>
+	    				<li>JSON</li>
+	    				<li>Heroku</li>
+	    				<li>Github</li>
+	    				<li>Bcrypt</li>
+	    				<li>oAuth</li>
+	    			</ul>
+	    		</ul>
+    		</div>
+    	</div>
     </div>
-    <div class="section">Some section</div>
-</div>
+    <!-- Projects Section -->
+    <div class="section project">
+    	<!-- PROJECT 1 -->
+    	<div class="slide" data-anchor="slide1" id="project1"> 
+    		<h1>The Thunderdome!</h1>
+    		<div class="projectdiv">
+    			<a href="http://thethunderdome.herokuapp.com">
+    				<img src="assets/thunderdome.png" class="projectpic">
+    			</a>
+    		</div>
+    		<div class="projectdetails">
+    			<h3>Details</h3>
+    			<p>	
+    				The Thunderdome is a real time chat app created using MongoDB, AngularJS, ExpressJS, NodeJS, and Socket.io. Users can log in with Facebook and enter the chatroom and begin chatting in real time, as well as seeing who else is in the room! If you're interested in learning more, click the image to the left to demo the site, or click below to view my Repository. 
+    			</p>
+    			<a href="https://github.com/Klaney/Thunderdomes">
+    				<button class="git">
+    					<i class="fa fa-lg fa-github"></i>
+    					View Repository
+    				</button>
+    			</a>
+    		</div>
+    	</div>
+    	<!-- PROJECT 2 -->
+	    <div class="slide" data-anchor="slide2" id="project2"> 
+	    	<h1>Tripper Finder!</h1>
+    		<div class="projectdiv">
+    			<a href="http://tripper-finder.herokuapp.com">
+    				<img src="assets/trpr.png" class="projectpic">
+    			</a>
+    		</div>
+    		<div class="projectdetails">
+    			<h3>Details</h3>
+    			<p>	
+    				Group Collaboration between myself, Ara Lawrence, Paloma Hennesey, and Taylor Bodin. We primarily used Ruby on Rails, oAuth, Materialize, Google Maps API, and Google Places API. If you're interested in learning more, click the image to the left to demo the site, or click below to view our Repository. 
+    			</p>
+    			<a href="https://github.com/AraLawrence/tripper">
+    				<button class="git">
+    					<i class="fa fa-lg fa-github"></i>
+    					View Repository
+    				</button>
+    			</a>
+    		</div>
+	    </div>
+	    <!-- PROJECT 3 -->
+	    <div class="slide" data-anchor="slide3" id="project3"> 
+	    	<h1>History of the 911!</h1>
+    		<div class="projectdiv">
+    			<a href="http://klaney.github.io/911d3js/">
+    				<img src="assets/911.png" class="projectpic">
+    			</a>
+    		</div>
+    		<div class="projectdetails">
+    			<h3>Details</h3>
+    			<p>	
+    				A weekend project I completed using D3.js. Prior to starting I had no knowledge of D3.js and was able to build a static site within 2 days. If you're interested in learning more, click the image to the left to demo the site, or click below to view my Repository. 
+    			</p>
+    			<a href="https://github.com/Klaney/911d3js">
+    				<button class="git">
+    					<i class="fa fa-lg fa-github"></i>
+    					View Repository
+    				</button>
+    			</a>
+    		</div> 
+	    </div>
+	    <!-- <div class="slide" data-anchor="slide4" id="project1"> Slide 4 </div> -->
+    </div>
+    <!-- Contact Info Section -->
+    <div class="section" id="contactinfo">
+    	<h1>Contact Me!</h1>
+    	<p id="contacttext">
+    		If you enjoyed what you saw, and would like to contact me. Feel free to Email me, connect on LinkedIn, follow my Github, or view my resume!
+    	</p>
+    	<a href="mailto:klaney@keaton.tech">
+				<button class="git">
+					<i class="fa fa-lg fa-envelope"></i>
+					Email
+				</button>
+			</a>
+			<a href="https://www.linkedin.com/in/keaton-laney-a9a187103">
+				<button class="git">
+					<i class="fa fa-lg fa-linkedin-square"></i>
+					LinkedIn
+				</button>
+			</a>
+			<a href="https://github.com/Klaney">
+				<button class="git">
+					<i class="fa fa-lg fa-github"></i>
+					Github
+				</button>
+			</a>
+			<a href="assets/keaton_laney_resume.docx">
+				<button class="git">
+					<i class="fa fa-file"></i>
+					Resume
+				</button>
+			</a>
+    </div>
+	</div>
+	<!-- End of FullpageJS -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/fullpage.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-
 </body>
 </html>

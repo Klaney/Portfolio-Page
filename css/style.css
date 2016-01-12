@@ -1,3 +1,199 @@
-div {
+/*CUSTOM FONT*/
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothicItalic';
+    src: url('../fonts/leaguegothic/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic/leaguegothic-italic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*CSS3 FADE IN FUNCTIONALITY*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+body {
+	font-family: 'LeagueGothic', helvetica;
+}
+
+h1 {
+	font-size: 80px;
+	font-family: 'GothicItalic';
+	text-shadow: 5px 5px 13px rgba(50, 50, 50, 1);
+	margin-top: 0px;
+	margin-bottom: 5%;
+}
+
+button {
+	margin-left: 3%;
+}
+
+ul {
+	list-style: none;
+}
+
+img.projectpic {
+	width:80%;
+	height:60%;
+	-webkit-box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+div.project{
+	background: linear-gradient(#35D436,white);
+}
+
+div.projectdiv {
+	width: 48%;
+	height:70%;
+	float: left;
+}
+
+div.projectdetails {
+	width: 48%;
+	height:70%;
+	float: left;
+	font-size: 1.5em;
+}
+
+.intro {
+	color: black;
+	background-color: lightgrey;
+	text-shadow: 5px 5px 13px rgba(150, 150, 150, 1);
+}
+
+.section {
 	text-align: center;
 }
+
+
+
+.skill {
+	list-style: none;
+	text-align: left;
+}
+
+.git {
+	-webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #d93434;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.git:hover {
+  background: #6f3cfc;
+  text-decoration: none;
+}
+
+#title {
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+
+#introduction {
+	background: url('../assets/newspapers.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#aboutme {
+	background: linear-gradient(#0E7FFF,white);
+}
+
+#contactinfo {
+	background: linear-gradient(#732ED4,white);
+}
+
+#headshot {
+	height:55%;
+	width:40%;
+	border-radius: 10%;
+	-webkit-box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+#skills {
+	width: 48%;
+	height: 62%;
+	float: left;
+	background-color: rgba(48, 44, 44, 0.2);
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 3px solid black;
+}
+
+#story {
+	width: 48%;
+	height: 62%;
+	font-size: 1.5em;
+	float: left;
+	margin-left: 1.5%;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: rgba(48, 44, 44, 0.2);
+}
+
+#tech {
+	width: 48%;
+	height: 70%;
+	float: left;
+	margin-left: 1.5%;
+}
+
+#realestate {
+	width: 48%;
+	height: 70%;
+	float: left;
+}
+
+#contacttext {
+	font-size: 1.3em;
+}
+
+#fp-nav ul li .fp-tooltip.left {
+	color:black;
+}
+

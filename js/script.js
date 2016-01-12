@@ -1,14 +1,15 @@
 $(document).ready(function(){
 	console.log("jQuery working");
+
 	$('#fullpage').fullpage({
 		//Navigation
-    menu: '#menu',
-    lockAnchors: false,
-    anchors:['introduction', 'aboutMe', 'projects', 'contact'],
+    menu: '#myMenu',
+    lockAnchors: true,
+    anchors:['introPage', 'aboutMe', 'projects', 'contact'],
     navigation: false,
-    navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    showActiveTooltip: false,
+    navigationPosition: 'left',
+    navigationTooltips: ['Introduction', 'About Me', 'Projects', 'Contact'],
+    showActiveTooltip: true,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
 
@@ -38,13 +39,13 @@ $(document).ready(function(){
     //Design
     controlArrows: true,
     verticalCentered: true,
-    resize : false,
-    sectionsColor: ['red', '#4BBFC3', '#7BAABE', '#F5F485'],
+    resize : true,
+    //sectionsColor: ['red', '#4BBFC3', '#7BAABE', '#F5F485'],
     paddingTop: '3em',
     paddingBottom: '10px',
     fixedElements: '#header, .footer',
-    responsiveWidth: 0,
-    responsiveHeight: 0,
+    responsiveWidth: 800,
+    responsiveHeight: 500,
 
     //Custom selectors
     sectionSelector: '.section',
