@@ -131,7 +131,7 @@ div.projectdetails {
 }
 
 #introduction {
-	background: url('../assets/newspapers.jpg');
+	background: url('assets/newspapers.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
